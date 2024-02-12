@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+		<header>
+			<h1>Semantic HTML</h1>
+		</header>
+
+		<section id="table">
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Package</th>
+						<th>Price</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>
+							Basic
+						</td>
+						<td>
+							₱500.00
+						</td>
+						<td>
+							Package includes a fully functional website with desird specifications.
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Premium
+						</td>
+						<td>
+							₱1000.00
+						</td>
+						<td>
+							Enjoy all the benefits of the basic package and also includes site support and maintenance.
+						</td>
+					</tr>
+				</tbody>
+
+				<tfoot>
+					<tr>
+						<th colspan="3">Additional features after initial project is inclusive of charges</th>
+					</tr>
+				</tfoot>
+			</table>
+		</section><br/><br/>
+		<section id="forms">
+			<h1>Contact Form</h1>
+			<form>
+				<label for="first_name">First Name:</label><br/>
+				<input type="text" name="first_name" id="first_name" required autocomplete><br/>
+
+				<label for="last_name">Last Name:</label><br/>
+				<input type="text" name="last_name" id="last_name" required autocomplete><br/>
+
+				<label for="email">Email:</label><br/>
+				<input type="text" name="email" id="email" required autocomplete><br/>
+
+				<label for="first_name">Contact</label><br/>
+				<input type="number" name="contact" id="contact" required autocomplete><br/>
+
+				<label for="service_type">Service Type</label><br/>
+
+					<select name="service_type" id="service_type">
+						<option value="front_end">Front End Programming</option>
+						<option value="back_end">Back End Programming</option>
+						<option value="full_stack">Full Stack Programming</option>
+					</select><br/>
+
+						<label>Preffered contact:</label>
+						<br/>
+
+						<input type="checkbox" name="user_pref" value="developer" id="pref1">
+						<label for="pref1">Email</label><br/>
+
+						<input type="checkbox" name="user_pref" value="phone" id="pref2">
+						<label for="pref2">Phone</label><br/>
+
+
+
+						<label>Package:</label><br/>
+
+						<input type="radio" name="user_plan" id="plan1">
+						<label for="plan1">Basic</label></br/>
+
+						<input type="radio" name="user_plan" id="plan2">
+						<label for="plan2">Premium</label><br/>
+
+
+				<label for="message">Message:</label><br/>
+				<textarea name="message" rows="5" id="message"></textarea><br/>
+
+				<button type="submit">Send inquiry</button><br/>
+				<button type="reset">Reset</button>
+
+			</form>
+		</section>
+</body>
+</html>
