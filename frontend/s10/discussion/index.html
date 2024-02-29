@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Box Model Demonstration</title>
-    <link rel="stylesheet" href="miniactivity.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Common Styling Properties</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="box1">Box 1</div>
-    <div id="box2">Box 2</div>
+    <h1>CSS Common Styling</h1>
+    <!-- Display Property Discussion -->
+    <h2>Display</h2>
+    <h4>Display inline vs Block</h4>
+<div id="div-3">A div can be displayed as inline</div>
+<div id="div-4">A div can be displayed as inline</div>
+
+<!-- span element or display inline css cant define height and width -->
+<span id="span-3">a span can be displayed as block</span>
+<span id="span-4">a span can be displayed as block</span>
+
+
+<!-- inline blocks can sit on the same line and combines block and inline properties -->
+<!-- this means that the inline block elements allow us to sit elements in the same line and yet still be able to add width and height properties -->
+<h3>Display: Inline-block</h3>
+<span id="span-5" class="d-inline-block">span-inline-block-1</span>
+<span id="span-6" class="d-inline-block">span-iinline-block-2</span>
+
+<div id="div-5">Div-inline-block-1</div>
+<div id="div-6">Div-inline-block-1</div>
+
+<!-- display none -->
+<div id="div-7">divs are block by default</div>
+<div id="div-8">divs are block by default adding display:none; property in a css ruleset hides and element</div>
+<span id="span-7">this is the fifth span</span>
+<span id="span-8">this is the sixth span</span>
+
+<hr>
+<h3>CSS UNITS</h3>
+
+<h4>px vs %</h4>
+<div class="box fifty-percent">50%</div>
+<div class="box one-hundred-pixels">100px</div>
+<div class="box fifty-vw">50vw</div>
+<div class="box twenty-five-vh">25vh</div>
+
+<br>
+
+<div class="parent">
+    <div class="box fifty-percent">50%</div>
+    <div class="box one-hundred-pixels">100px</div>
+    <div class="box fifty-vw">50vw</div>
+    <div class="box twenty-five-vh">25vh</div>
+
+
+    <div>16px</div>
+    <div class="one-rem">1rem</div>
+    <div class="one-em">1em</div>
+    <div class="two-rem">2rem</div>
+    <div class="two-em">2em</div>
+
+    <div class="parent">
+        <div class="one-rem">1rem</div>
+        <div class="one-em">1em</div>
+        <div class="two-rem">2rem</div>
+        <div class="two-em">2em</div>
+        <div class="two-hundred-percent">200%</div>
+    </div>
+</div>
+<hr>
+  <section class="background">
+    <div class="container-bg">
+        <h3 class="bg-title">css background properties</h3>
+        </div>
+    </section>
 </body>
 </html>

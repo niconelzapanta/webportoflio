@@ -1,0 +1,57 @@
+Create Paste
+Followup Paste
+QR
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link
+ rel="stylesheet"
+ href="https://bootswatch.com/5/cyborg/bootstrap.min.css"
+ />
+ <title>Document</title>
+ </head>
+ <body>
+ <table class="table table-hover">
+	 <thead>
+		 <tr>
+		 <th scope="col">ID</th>
+		 <th scope="col">Name</th>
+		 <th scope="col">Image</th>
+		 <th scope="col">Level</th>
+		 </tr>
+	 </thead>
+	 <tbody>
+		 <tr class="table-active">
+		 <th scope="row">Active</th>
+		 <td>Column content</td>
+		 <td>Column content</td>
+		 <td>Column content</td>
+		 </tr>
+	 </tbody>
+  </table>
+
+ <script type="module">
+ const holder = document.getElementById("text-holder");
+ const data = await fetch("https://digimon-api.vercel.app/api/digimon").then(
+ (res) => res.json()
+ );
+ 
+ const tbody = document.getElementById("t-body");
+
+	tbody.innerHTML = data
+	.map((digimon, idx) => {
+		return `
+ 	<tr>
+ 		<td>${idx+1}</td>
+ 		<td>${digimon.name}</td>
+ 		<td>${digimon.img}</td>
+ 		<td>${digimon.level}</td>
+ 	</tr>`;
+})
+.join("");
+
+ </script>
+ </body>
+</html>

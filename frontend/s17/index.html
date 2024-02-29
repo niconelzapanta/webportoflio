@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+	<div class="d-lg-flex">
+		<!--  -->
+		<div id="landing" class="col-xl-2 col-lg-2 text-center vh-100% mb-2 pb-2">
+			<img class="h-10 w-10 p-4 img-fluid rounded-circle" src="./profile.jpg">
+			<h2>Niconel Zapanta</h2>
+			<h5>Full Stack Developer</h5>
+			<p>Hi, my name is Niconel Zapanta, an aspiring software developer.</p>
+
+			<div id="contact">
+					<h1>Contact Me</h1>
+
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalDiv">Contact Form</button>
+
+					<!-- Modal -->
+					<div id="modalDiv" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contact-modal-label" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="contact-modal-label">Contact Me</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="modal-name">Name</label>
+											<input type="text" class="form-control" id="modal-name" placeholder="Your Name">
+										</div>
+										<div class="form-group">
+											<label for="modal-email">Email address</label>
+											<input type="email" class="form-control" id="modal-email" aria-describedby="modal-email-help" placeholder="name@example.com">
+											<small id="modal-email-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+										</div>
+										<div class="form-group">
+											<label for="modal-contact">Contact Number</label>
+											<input type="password" class="form-control" id="modal-contact" placeholder="+63 900 000 0000">
+										</div>
+										<div class="form-group">
+											<label for="modal-message">Message</label>
+											<textarea class="form-control" id="modal-message" rows="3"></textarea>
+
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Send Email</button>
+										</div>
+
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- modal end -->
+				</div>
+		</div>
+		<!--  -->
+		<div class="container-right">
+			<div class="p-3 text-center">
+				<!--  -->
+				<div id="tools">
+					<h1>Tools I Use</h1>
+					<div class="tools-container mb-5 mt-2">
+						<div class="card col-xl-2 mb-5 mb-xl-0">
+							<img src="./html.png" class="card-img-top" alt="...">
+							<h5 class="card-title mt-3">HTML</h5>
+						</div>
+						<div class="card col-xl-2 mb-5 mb-xl-0">
+							<img src="./css.png" class="card-img-top" alt="...">
+							<h5 class="card-title mt-3">CSS</h5>
+						</div>
+						<div class="card col-xl-2 mb-5 mb-xl-0">
+							<img src="./js.png" class="card-img-top" alt="...">
+							<h5 class="card-title mt-3">JScript</h5>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div id="projects">
+					<h1>My Projects</h1>
+					<div class="project-container d-md-flex mb-5">
+						<div class="card">
+							<img src="./Project1.jpg" class="card-img-top">
+							<h5 class="card-title mt-3">Dummy Magazine Project</h5>
+						</div>
+						<div class="card">
+							<img src="./Project2.jpg" class="card-img-top" >
+							<h5 class="card-title mt-3">Dummy E-commerce Project</h5>
+						</div>
+						<div class="card">
+							<img src="./Project3.jpg" class="card-img-top" >
+							<h5 class="card-title mt-3">Dome Manipulation Portfolio</h5>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				
+				<!-- contact end -->
+			</div>
+			<!-- container end -->
+		</div>
+		<!-- container end -->
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>

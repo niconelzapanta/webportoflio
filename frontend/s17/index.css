@@ -1,0 +1,45 @@
+* {
+  font-family: "Roboto", sans-serif;
+/*  font-weight: 500;*/
+  font-style: normal;
+}
+
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+/*.container-main{
+	display: flex;
+}*/
+
+.container-right{
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: #fdf2e9;
+}
+
+#landing{
+	background-color: #873600;
+}
+
+.project-container {
+/*    display: flex;*/
+    gap: 70px;
+}
+
+.card {
+    flex: 1;
+}
+
+.tools-container {
+	display: flex;
+	gap:25px;
+	justify-content: center;
+}
+
+#projects img{
+	height: 500px;
+}
+
